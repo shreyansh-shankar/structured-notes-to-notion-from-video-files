@@ -5,7 +5,7 @@ import os
 
 def run_ollama_model(prompt, output_file):
     # Prepare the command to run the model
-    command = ['ollama', 'run', 'llama3.2:3b']
+    command = ['ollama', 'run', 'llama3.2:3b']  # Enter your model here (if you are using a different model)
 
     # Start the subprocess
     process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
