@@ -4,8 +4,8 @@ import requests
 import re
 import os
 
-NOTION_API_KEY = 'secret_D7RVCBs8uM5mH7WNHSwITv2ivE85cusCZhFHAEE7WbC'
-DATABASE_ID = '7d9c18fd12ef4e30b56a41dbab4796cb'
+NOTION_API_KEY = 'YOUR-NOTION-API-KEY'
+DATABASE_ID = 'YOUR-DATABASE-ID'
 
 # authorising notion client
 notion = Client(auth = NOTION_API_KEY)
@@ -18,7 +18,7 @@ headers = {
 
 def fetch_specific_page(database_id, title_to_find, context_value):
     try:
-        # Define the filter for the context
+        # Modify the the filter query according to your preferences
         filter_query = {
             "and": [
                 {
